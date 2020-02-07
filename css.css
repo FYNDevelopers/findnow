@@ -50,6 +50,14 @@ body{
 	width: 100vw;
 }
 
+#bg_img_hotel{
+	background: url('hotel.jpg')no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 80vh;
+	width: 100vw;	
+}
+
 #main_content_container{
 	display: flex;
 	justify-content: space-between;
