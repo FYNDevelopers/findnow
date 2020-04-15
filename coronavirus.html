@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coronavirus live updates</title>
+
+	<link rel="stylesheet" type="text/css" href="corona_live_styling.css">
+	<script src="corona_live_javascripts.js"></script>
+</head>
+<body>
+
+	<main>
+		<section id="top">
+			<div class="date">
+				<div class="before_date"></div>
+				<p id="time"></p>
+			</div>
+
+			<div class="title" onclick="getCountries()">
+				<h1>CORONAVIRUS LIVE STATISTICS</h1>
+			</div>
+
+			<div class="data">
+				<div class="container">
+					<p>Total Cases</p>
+					<div id="cases" class="total_cases"></div>
+				</div>
+
+				<div class="container">
+					<p>Total Deaths</p>
+					<div id="deaths" class="total_cases"></div>
+				</div>
+
+				<div class="container">
+					<p>Total Recovered</p>
+					<div id="recovered" class="total_cases"></div>
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="bottom">
+			<section class="left">
+				<div id="random_country">
+					<div id="rnd_country"></div>
+					<div id="rnd_country_data"></div>
+				</div>
+
+				<div class="flags_scroll">
+					<marquee behavior="scroll" direction="left" scrollamount="3">
+						<img src="flags_1.jpg" height="50">
+						<img src="flags_2.jpg" height="50">
+						<img src="flags_3.jpg" height="50">
+						<img src="flags_4.jpg" height="50">
+						<img src="flags_5.jpg" height="50">
+						<img src="flags_6.jpg" height="50">
+						<img src="flags_7.jpg" height="50">
+						<img src="flags_8.jpg" height="50">
+						<img src="flags_9.jpg" height="50">
+					</marquee>
+				</div>
+
+				<div class="footer_info">
+					<p>
+						Sources:<br>
+						who.int<br>
+						nhc.gov.cn<br>
+						cdc.gov<br>
+						worldometers.info<br>
+						globalworldupdate.com
+					</p>
+
+					<p class="copyright">Data presented by Mutai | s.mutai30@gmail.com</p>
+				</div>
+				
+			</section>
+
+			<section class="right">
+				<h1>Stay safe</h1>
+				<ul>
+					<li>Wash your hands often</li>
+					<li>Stay at home</li>
+					<li>Use face mask</li>
+					<li>Clean and disinfect frequently <br>touched surfaces daily</li>
+				</ul>
+			</section>
+		</section>
+	</main>
+
+
+
+<script>
+	getWorldTotal();
+	getRandomCountry();
+</script>
+
+</body>
+</html>
