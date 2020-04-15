@@ -42,6 +42,10 @@ main{
 	margin: 15px 5px 0 0;
 }
 
+#time{
+	font-size: 15px;
+}
+
 #top .title{
 	height: 30%;
 	color: red;
@@ -51,7 +55,7 @@ main{
 #top .title h1{
 	text-align: center;
 	font-weight: normal;
-	font-size: 3rem;
+	font-size: 50px;
 	padding-top: 20px;
 	margin: 0;
 }
@@ -72,10 +76,15 @@ main{
 	align-items: center;
 }
 
+#top .data .container p{
+	font-size: 18px;
+	margin: 20px 0 0 0;
+}
+
 
 .total_cases{
 	font-weight: bolder;
-	font-size: 2.5rem;
+	font-size: 50px;
 }
 
 
@@ -102,13 +111,13 @@ main{
 }
 
 #rnd_country{
-	font-size: 3.5rem;
+	font-size: 55px;
 	font-weight: normal;
 }
 
 #rnd_country_data{
 	font-weight: bolder;
-	font-size: 2rem;
+	font-size: 30px;
 	text-align: center;
 }
 
@@ -131,12 +140,12 @@ main{
 }
 
 #bottom .left .footer_info p{
-	font-size: 0.6rem;
+	font-size: 10px;
 	font-style: italic;
 }
 
 #bottom .left .footer_info .copyright{
-	font-size: 0.7rem;
+	font-size: 12px;
 	font-style: normal;
 	color: rgba(255,255,255,0.5);
 }
@@ -153,12 +162,14 @@ main{
 }
 
 #bottom .right h1{
-	font-size: 50px;
+	font-size: 58px;
 	padding: 0;
 	margin: 0;
 }
 
-
+#bottom .right li{
+	font-size: 20px;
+}
 
 
 
