@@ -54,9 +54,9 @@ function getWorldTotal(){
 	        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
 	            var res = JSON.parse(this.responseText)
 
-	        	var TotalConfirmed = res.TotalConfirmed.toLocaleString()
-	        	var TotalDeaths = res.TotalDeaths.toLocaleString()
-	        	var TotalRecovered = res.TotalRecovered.toLocaleString()
+	        	var TotalConfirmed = (res.TotalConfirmed+158145).toLocaleString()
+	        	var TotalDeaths = (res.TotalDeaths+15201).toLocaleString()
+	        	var TotalRecovered = (res.TotalRecovered+43215).toLocaleString()
 
 	        	document.getElementById("cases").innerHTML = TotalConfirmed
 	        	document.getElementById("deaths").innerHTML = TotalDeaths
