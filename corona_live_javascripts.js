@@ -54,9 +54,9 @@ function getWorldTotal(){
 	        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
 	            var res = JSON.parse(this.responseText)
 
-	        	var TotalConfirmed = (res.TotalConfirmed+158145).toLocaleString()
-	        	var TotalDeaths = (res.TotalDeaths+15201).toLocaleString()
-	        	var TotalRecovered = (res.TotalRecovered+43215).toLocaleString()
+	        	var TotalConfirmed = (res.TotalConfirmed+15845).toLocaleString()
+	        	var TotalDeaths = (res.TotalDeaths+0).toLocaleString()
+	        	var TotalRecovered = (res.TotalRecovered+0).toLocaleString()
 
 	        	document.getElementById("cases").innerHTML = TotalConfirmed
 	        	document.getElementById("deaths").innerHTML = TotalDeaths
@@ -102,7 +102,6 @@ function getRandomCountry(){
 
 		var country_random_from_list = country_list[Math.floor(Math.random()*country_list.length)]
 		var api_url = 'https://api.covid19api.com/live/country' + '/' + country_random_from_list
-		console.log(api_url)
 		var xmlHttp = new XMLHttpRequest()
 	    xmlHttp.onreadystatechange = function() { 
 	        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
