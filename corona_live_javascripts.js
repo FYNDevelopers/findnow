@@ -107,7 +107,7 @@ function getRandomCountry(){
 	        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
 	            var res = JSON.parse(this.responseText)
 
-	        	console.log(res[0])
+	        	var country_data = res.slice(-1).pop()
 	        	var country_data = res[0]
 
 	        	var country = country_data.Country
