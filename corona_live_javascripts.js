@@ -108,8 +108,7 @@ function getRandomCountry(){
 	            var res = JSON.parse(this.responseText)
 
 	        	var country_data = res.slice(-1).pop()
-	        	var country_data = res[0]
-
+	        	
 	        	var country = country_data.Country
 	        	var cases = country_data.Confirmed.toLocaleString()
 	        	var deaths = country_data.Deaths.toLocaleString()
