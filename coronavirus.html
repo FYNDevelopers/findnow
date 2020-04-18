@@ -2,10 +2,15 @@
 <html>
 <head>
 
+
+
 <!--
 Built by Shadrack mutai
 s.mutai30@gmail.com
 -->
+
+
+
 
 
 	<title>Coronavirus live updates</title>
@@ -47,9 +52,33 @@ s.mutai30@gmail.com
 
 		<section id="bottom">
 			<section class="left">
-				<div id="random_country">
-					<div id="rnd_country"></div>
-					<div id="rnd_country_data"></div>
+				
+				<div id="dynamic_data">
+					
+					<div id="usa">
+						<span style="display: flex;">
+							<img src="Flag_of_the_United_States.svg" width="40%"> <h1 style="font-size: 30px;text-align: center; font-weight: bolder; margin: 20px 0 0 0;">United States of America</h1>
+						</span>
+						<span style="display: flex; padding-left: 20px; background: #b22234;">
+							<p id="usa_table_title" style="padding-right: 120px;">State</p>
+							<p id="usa_table_title">Cases</p>
+							<p id="usa_table_title" style="padding-left: 10px;">Deaths</p>
+						
+						</span>
+						<marquee behavior="scroll" direction="down" scrollamount="1" style='height: 100%; font-size: 14px;padding-left: 5px; background: rgba(0,0,0,0.1);'>
+							<div id="usa_table_data">
+								
+							</div>
+
+						</marquee>
+					</div>
+					
+					<div id="random_country">
+						<div id="rnd_country">Kenya</div>
+						<div id="rnd_country_data">data</div>
+					</div>
+
+					
 				</div>
 
 				<div class="flags_scroll">
@@ -73,8 +102,7 @@ s.mutai30@gmail.com
 						who.int<br>
 						nhc.gov.cn<br>
 						cdc.gov<br>						
-						covid19api.com
-						
+						rapidapi.com
 					</p>
 
 					<p class="copyright">Data presented by Mutai | s.mutai30@gmail.com</p>
@@ -82,14 +110,24 @@ s.mutai30@gmail.com
 				
 			</section>
 
-			<section class="right">
-				<h1>Stay safe</h1>
-				<ul>
-					<li>Wash your hands often</li>
-					<li>Stay at home</li>
-					<li>Use face mask</li>
-					<li>Clean and disinfect frequently <br>touched surfaces daily</li>
-				</ul>
+			<section class="right" onclick="getNewCases()">
+				<div class="summary">
+					<div id="new_cases"></div>
+					<div id="new_deaths"></div>
+					<div id="new_recoveries"></div>
+				</div>
+
+				<div>
+					<h1>Stay safe</h1>
+					<ul>
+						<li>Wash your hands often</li>
+						<li>Stay at home</li>
+						<li>Use face mask</li>
+						<li>Clean and disinfect frequently <br>touched surfaces daily</li>
+					</ul>
+				</div>
+				
+				
 				
 			</section>
 		</section>
@@ -100,6 +138,8 @@ s.mutai30@gmail.com
 <script>
 	getWorldTotal();
 	getRandomCountry();
+	getState();
+	getNewCases();
 </script>
 
 </body>
